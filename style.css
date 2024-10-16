@@ -156,7 +156,7 @@ h1{
 
 .pic{
     height: 50vh;
-    width: 40vh;
+    width: 50vh;
     background-color: rgba(246, 224, 215, 0.9);
     border-radius: 8px;
 }
@@ -170,7 +170,7 @@ h1{
 .others{
     padding: 2%;
     height: 50vh;
-    width: 70vh;
+    width: 60vh;
     background-color: rgba(246, 224, 215, 0.9);
     display: flex;
     align-items: center;
@@ -185,6 +185,10 @@ h1{
     color: #070707;
     -webkit-text-stroke: transparent;
     letter-spacing: 0.1vw;
+}
+
+.others > h1{
+    font-size: 2.5rem;
 }
 
 .cry{
