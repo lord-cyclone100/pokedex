@@ -389,7 +389,7 @@ h1{
     
     .pic{
         height: 45vh;
-        width: 40vh;
+        width: 45vh;
         background-color: rgba(246, 224, 215, 0.9);
         border-radius: 8px;
     }
@@ -402,7 +402,7 @@ h1{
     
     .others{
         height: 45vh;
-        width: 70vh;
+        width: 65vh;
         justify-content: center;
         gap: 10px;
         padding: 0em;
@@ -446,7 +446,7 @@ h1{
 
     .pic{
         height: 40vh;
-        width: 35vh;
+        width: 40vh;
         background-color: rgba(246, 224, 215, 0.9);
         border-radius: 8px;
     }
@@ -498,14 +498,14 @@ h1{
     .stat{
         /* padding: 3%; */
         height: 45vh;
-        width: 70vh;
+        width: 77vh;
         gap: 5px;
         margin-bottom: 10px;
     }
 
     .stat > div{
         gap: 0em;
-        width: 70vh;
+        /* width: 75vh; */
     }
 
     .stat > div >div{
@@ -523,7 +523,7 @@ h1{
     }
 
     .strengths-weaknesses{
-        width: 70vh;
+        width: 77vh;
     }
 
 }
@@ -555,13 +555,13 @@ h1{
     }
 
     .pic{
-        height: 35vh;
+        height: 40vh;
         width: 40vh;
         border-radius: 8px;
     }
 
     .others{
-        height: 30vh;
+        height: 35vh;
         width: 40vh;
         justify-content: center;
         gap: 5px;
@@ -601,7 +601,7 @@ h1{
 
     .stat{
         /* padding: 3%; */
-        height: 30vh;
+        height: 35vh;
         width: 40vh;
         gap: 0;
     }
@@ -626,7 +626,7 @@ h1{
     .strengths-weaknesses{
         margin-top: 0.1em;
         padding-top: 5%;
-        height: 30vh;
+        height: 35vh;
         width: 40vh;
     }
 
