@@ -20,6 +20,7 @@
     /* background: #1c99ad; */
     /* background: linear-gradient(90deg, #1c99ad 0%, #178c57 0%); */
     background: linear-gradient(to right, #e30f0f, #b81414);
+    /* background: linear-gradient(to bottom, #f07878, #cc2020); */
 }
 
 .box div{
@@ -120,7 +121,7 @@ h1{
 }
 
 .input-search > input{
-    width: 20%;
+    width: 30%;
     padding: 0.7%;
     background: #070707;
     color: #f7f7f7;
@@ -154,24 +155,26 @@ h1{
 }
 
 .pic{
-    height: 40vh;
-    width: 40vh;
-    background-color: rgba(241, 231, 219, 0.9);
+    height: 50vh;
+    width: 50vh;
+    background-color: rgba(246, 224, 215, 0.9);
+    border-radius: 8px;
 }
 
 .pic > img{
     width: 100%;
-
+    height: 100%;
+    border-radius: 8px;
 }
 
 .others{
     padding: 2%;
-    height: 40vh;
-    width: 70vh;
-    background-color: rgba(241, 231, 219, 0.9);
+    height: 50vh;
+    width: 60vh;
+    background-color: rgba(246, 224, 215, 0.9);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-family: Poppins;
     flex-direction: column;
     border-radius: 8px;
@@ -182,6 +185,10 @@ h1{
     color: #070707;
     -webkit-text-stroke: transparent;
     letter-spacing: 0.1vw;
+}
+
+.others > h1{
+    font-size: 2.5rem;
 }
 
 .cry{
@@ -200,6 +207,7 @@ h1{
     background: transparent;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 
 .stats{
@@ -218,7 +226,7 @@ h1{
     padding: 3%;
     height: 40vh;
     width: 70vh;
-    background-color: rgba(241, 231, 219, 0.9);
+    background-color: rgba(246, 224, 215, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,7 +237,7 @@ h1{
     padding: 2%;
     height: 40vh;
     width: 40vh;
-    background-color: rgba(241, 231, 219, 0.9);
+    background-color: rgba(246, 224, 215, 0.9);
     display: flex;
     flex-direction: column;
     padding: 3% 2%;
@@ -278,8 +286,8 @@ h1{
     height: 60%;
     display: flex;
     flex-direction: column;
-    padding: 8%;
-    gap: 8%;
+    padding: 5%;
+    gap: 5%;
     align-items: center;
 }
 
@@ -380,6 +388,153 @@ h1{
     background-color: #ee99ee !important;
 }
 
+
+@media (max-width:1025px) {
+    
+    .pic{
+        height: 45vh;
+        width: 45vh;
+        background-color: rgba(246, 224, 215, 0.9);
+        border-radius: 8px;
+    }
+    
+    .pic > img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .others{
+        height: 45vh;
+        width: 65vh;
+        justify-content: center;
+        gap: 10px;
+        padding: 0em;
+    }
+
+    .others > h1{
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .others >h2{
+        font-size: 1em;
+    }
+
+
+  .type{
+    gap: 8%;
+  }
+}
+
+
+
+@media (max-width:770px) {
+
+    h1{
+        font-size: 2em;
+        margin-top: 1em;
+    }
+
+    .input-search{
+        margin-top: 2em;
+    }
+
+    .input-search > input{
+        width: 40vw;
+    }
+
+    .input-search > button{
+        padding: 1.1%;
+    }
+
+    .pic{
+        height: 40vh;
+        width: 40vh;
+        background-color: rgba(246, 224, 215, 0.9);
+        border-radius: 8px;
+    }
+    
+    .pic > img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .others{
+        height: 40vh;
+        width: 35vh;
+        justify-content: center;
+        gap: 10px;
+        padding: 0em;
+    }
+
+    .others > h1{
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .others >h2{
+        font-size: 1em;
+    }
+
+    .cry{
+        width: 2em;
+        height: 2em;
+    }
+
+    .cry > button{
+        height: 2em;
+        width: 2em;
+        font-size: 4vh;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .cry > h4{
+        font-size: 0.8em;
+    }
+
+    
+    .stats > .container{
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .stat{
+        /* padding: 3%; */
+        height: 45vh;
+        width: 77vh;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    .stat > div{
+        gap: 0em;
+        /* width: 75vh; */
+    }
+
+    .stat > div >div{
+        padding: 0;
+        gap: 2px;
+
+    }
+
+    .stat > div > div > h4{
+        font-size: 0.8em;
+    }
+
+    .stat > div > div > h1{
+        font-size: 1.5em;
+    }
+
+    .strengths-weaknesses{
+        width: 77vh;
+    }
+
+}
+
+
+
+
 @media (max-width:430px) {
     h1{
         font-size: 2em;
@@ -404,25 +559,27 @@ h1{
     }
 
     .pic{
-        height: 30vh;
-        width: 30vh;
+        height: 40vh;
+        width: 40vh;
+        border-radius: 8px;
     }
 
     .others{
-        height: 23vh;
+        height: 35vh;
         width: 40vh;
         justify-content: center;
-        gap: 10px;
+        gap: 5px;
         padding: 0em;
+        margin-bottom: 5px;
     }
 
     .others > h1{
-        font-size: 1.7em;
+        font-size: 1em;
         margin: 0;
     }
 
     .others >h2{
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .cry{
@@ -443,11 +600,12 @@ h1{
 
     .stats > .container{
         flex-direction: column;
+        gap: 2px;
     }
 
     .stat{
         /* padding: 3%; */
-        height: 30vh;
+        height: 35vh;
         width: 40vh;
         gap: 0;
     }
@@ -462,7 +620,7 @@ h1{
     }
 
     .stat > div > div > h4{
-        font-size: 0.8em;
+        font-size: 0.65em;
     }
 
     .stat > div > div > h1{
@@ -472,7 +630,7 @@ h1{
     .strengths-weaknesses{
         margin-top: 0.1em;
         padding-top: 5%;
-        height: 30vh;
+        height: 35vh;
         width: 40vh;
     }
 
@@ -481,6 +639,7 @@ h1{
     }
 
     .about{
+        margin-top: 5px;
         width: 40vh;
     }
 
