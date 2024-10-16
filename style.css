@@ -19,8 +19,8 @@
     overflow-y: scroll;
     /* background: #1c99ad; */
     /* background: linear-gradient(90deg, #1c99ad 0%, #178c57 0%); */
-    /* background: linear-gradient(to right, #e30f0f, #b81414); */
-    background: linear-gradient(to bottom, #f07878, #cc2020);
+    background: linear-gradient(to right, #e30f0f, #b81414);
+    /* background: linear-gradient(to bottom, #f07878, #cc2020); */
 }
 
 .box div{
@@ -155,18 +155,21 @@ h1{
 }
 
 .pic{
-    height: 40vh;
+    height: 50vh;
     width: 40vh;
+    background-color: rgba(246, 224, 215, 0.9);
+    border-radius: 8px;
 }
 
 .pic > img{
     width: 100%;
-
+    height: 100%;
+    border-radius: 8px;
 }
 
 .others{
     padding: 2%;
-    height: 65vh;
+    height: 50vh;
     width: 70vh;
     background-color: rgba(246, 224, 215, 0.9);
     display: flex;
@@ -279,7 +282,7 @@ h1{
     height: 60%;
     display: flex;
     flex-direction: column;
-    padding: 8%;
+    padding: 5%;
     gap: 5%;
     align-items: center;
 }
@@ -382,19 +385,31 @@ h1{
 }
 
 
-
 @media (max-width:1025px) {
     
+    .pic{
+        height: 45vh;
+        width: 40vh;
+        background-color: rgba(246, 224, 215, 0.9);
+        border-radius: 8px;
+    }
+    
+    .pic > img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
     .others{
-        height: 55vh;
-        width: 60vh;
+        height: 45vh;
+        width: 70vh;
         justify-content: center;
         gap: 10px;
         padding: 0em;
     }
 
     .others > h1{
-        font-size: 1.5em;
+        font-size: 1em;
         margin: 0;
     }
 
@@ -402,11 +417,11 @@ h1{
         font-size: 1em;
     }
 
-    .type{
-        padding: 4px;
-    }
-}
 
+  .type{
+    gap: 8%;
+  }
+}
 
 
 
@@ -429,10 +444,21 @@ h1{
         padding: 1.1%;
     }
 
+    .pic{
+        height: 40vh;
+        width: 35vh;
+        background-color: rgba(246, 224, 215, 0.9);
+        border-radius: 8px;
+    }
+    
+    .pic > img{
+        width: 100%;
+        height: 100%;
+    }
     
     .others{
-        height: 37vh;
-        width: 40vh;
+        height: 40vh;
+        width: 35vh;
         justify-content: center;
         gap: 10px;
         padding: 0em;
@@ -463,7 +489,6 @@ h1{
         font-size: 0.8em;
     }
 
-
     
     .stats > .container{
         flex-direction: column;
@@ -473,17 +498,20 @@ h1{
     .stat{
         /* padding: 3%; */
         height: 45vh;
-        width: 60vh;
+        width: 70vh;
         gap: 5px;
+        margin-bottom: 10px;
     }
 
     .stat > div{
         gap: 0em;
+        width: 70vh;
     }
 
     .stat > div >div{
         padding: 0;
         gap: 2px;
+
     }
 
     .stat > div > div > h4{
@@ -492,6 +520,10 @@ h1{
 
     .stat > div > div > h1{
         font-size: 1.5em;
+    }
+
+    .strengths-weaknesses{
+        width: 70vh;
     }
 
 }
@@ -524,15 +556,17 @@ h1{
 
     .pic{
         height: 35vh;
-        width: 35vh;
+        width: 40vh;
+        border-radius: 8px;
     }
 
     .others{
-        height: 20vh;
+        height: 30vh;
         width: 40vh;
         justify-content: center;
-        gap: 10px;
+        gap: 5px;
         padding: 0em;
+        margin-bottom: 5px;
     }
 
     .others > h1{
@@ -562,7 +596,7 @@ h1{
 
     .stats > .container{
         flex-direction: column;
-        gap: 5px;
+        gap: 2px;
     }
 
     .stat{
@@ -582,7 +616,7 @@ h1{
     }
 
     .stat > div > div > h4{
-        font-size: 0.7em;
+        font-size: 0.65em;
     }
 
     .stat > div > div > h1{
@@ -601,6 +635,7 @@ h1{
     }
 
     .about{
+        margin-top: 5px;
         width: 40vh;
     }
 
