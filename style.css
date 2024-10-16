@@ -19,7 +19,8 @@
     overflow-y: scroll;
     /* background: #1c99ad; */
     /* background: linear-gradient(90deg, #1c99ad 0%, #178c57 0%); */
-    background: linear-gradient(to right, #e30f0f, #b81414);
+    /* background: linear-gradient(to right, #e30f0f, #b81414); */
+    background: linear-gradient(to bottom, #f07878, #cc2020);
 }
 
 .box div{
@@ -120,7 +121,7 @@ h1{
 }
 
 .input-search > input{
-    width: 20%;
+    width: 30%;
     padding: 0.7%;
     background: #070707;
     color: #f7f7f7;
@@ -156,7 +157,6 @@ h1{
 .pic{
     height: 40vh;
     width: 40vh;
-    background-color: rgba(241, 231, 219, 0.9);
 }
 
 .pic > img{
@@ -166,12 +166,12 @@ h1{
 
 .others{
     padding: 2%;
-    height: 40vh;
+    height: 65vh;
     width: 70vh;
-    background-color: rgba(241, 231, 219, 0.9);
+    background-color: rgba(226, 155, 68, 0.9);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-family: Poppins;
     flex-direction: column;
     border-radius: 8px;
@@ -200,6 +200,7 @@ h1{
     background: transparent;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 
 .stats{
@@ -218,7 +219,7 @@ h1{
     padding: 3%;
     height: 40vh;
     width: 70vh;
-    background-color: rgba(241, 231, 219, 0.9);
+    background-color: rgba(241, 206, 192, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,7 +230,7 @@ h1{
     padding: 2%;
     height: 40vh;
     width: 40vh;
-    background-color: rgba(241, 231, 219, 0.9);
+    background-color: rgba(241, 206, 192, 0.9);
     display: flex;
     flex-direction: column;
     padding: 3% 2%;
@@ -279,7 +280,7 @@ h1{
     display: flex;
     flex-direction: column;
     padding: 8%;
-    gap: 8%;
+    gap: 5%;
     align-items: center;
 }
 
@@ -380,6 +381,96 @@ h1{
     background-color: #ee99ee !important;
 }
 
+
+@media (max-width:770px) {
+
+    h1{
+        font-size: 2em;
+        margin-top: 1em;
+    }
+
+    .input-search{
+        margin-top: 2em;
+    }
+
+    .input-search > input{
+        width: 40vw;
+    }
+
+    .input-search > button{
+        padding: 1.1%;
+    }
+
+    
+    .others{
+        height: 37vh;
+        width: 40vh;
+        justify-content: center;
+        gap: 10px;
+        padding: 0em;
+    }
+
+    .others > h1{
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .others >h2{
+        font-size: 1em;
+    }
+
+    .cry{
+        width: 2em;
+        height: 2em;
+    }
+
+    .cry > button{
+        height: 2em;
+        width: 2em;
+        font-size: 4vh;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .cry > h4{
+        font-size: 0.8em;
+    }
+
+
+    
+    .stats > .container{
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .stat{
+        /* padding: 3%; */
+        height: 45vh;
+        width: 60vh;
+        gap: 5px;
+    }
+
+    .stat > div{
+        gap: 0em;
+    }
+
+    .stat > div >div{
+        padding: 0;
+        gap: 2px;
+    }
+
+    .stat > div > div > h4{
+        font-size: 0.8em;
+    }
+
+    .stat > div > div > h1{
+        font-size: 1.5em;
+    }
+
+}
+
+
+
+
 @media (max-width:430px) {
     h1{
         font-size: 2em;
@@ -404,12 +495,12 @@ h1{
     }
 
     .pic{
-        height: 30vh;
-        width: 30vh;
+        height: 35vh;
+        width: 35vh;
     }
 
     .others{
-        height: 23vh;
+        height: 20vh;
         width: 40vh;
         justify-content: center;
         gap: 10px;
@@ -417,12 +508,12 @@ h1{
     }
 
     .others > h1{
-        font-size: 1.7em;
+        font-size: 1em;
         margin: 0;
     }
 
     .others >h2{
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .cry{
@@ -443,6 +534,7 @@ h1{
 
     .stats > .container{
         flex-direction: column;
+        gap: 5px;
     }
 
     .stat{
@@ -462,7 +554,7 @@ h1{
     }
 
     .stat > div > div > h4{
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     .stat > div > div > h1{
