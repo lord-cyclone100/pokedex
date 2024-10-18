@@ -134,7 +134,7 @@ h1 {
     width: 30%;
     padding: 0.7%;
     background: #070707c4;
-    color: #ffffff;
+    color: #f7f7f7;
     font-size: 100%;
     border-radius: 10px;
     font-family: Poppins;
@@ -174,7 +174,6 @@ h1 {
     width: 50vh;
     background-color: rgba(246, 224, 215, 0.9);
     border-radius: 8px;
-    transition: transform 0.8s ease, box-shadow 0.3s ease;
 }
 
 .pic>img {
@@ -194,8 +193,6 @@ h1 {
     font-family: Poppins;
     flex-direction: column;
     border-radius: 8px;
-
-    transition: transform 0.8s ease, box-shadow 0.3s ease;
 }
 
 .others>h1,
@@ -214,16 +211,14 @@ h1 {
     font-size: 2.5rem;
 }
 
-.pic:hover,
-.others:hover {
-    transform: scale(1.01);
-    /* Increases size by 10% */
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
-    /* Adds a shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth transition */
+.pic img {
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
+.pic img:hover {
+    transform: scale(1.01);
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.5));
+}
 
 .cry {
     height: 7vw;
