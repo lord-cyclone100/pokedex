@@ -21,6 +21,8 @@ We welcome contributions to **Pokedex**! Whether you're fixing bugs, adding new 
    cd pokedex
    ```
 
+   This creates a local repo to your own github account where you can make your changes
+
 3. **Create a Branch:**
 
    Create a new branch for your changes:
