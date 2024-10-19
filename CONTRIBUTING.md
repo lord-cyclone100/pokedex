@@ -21,6 +21,8 @@ We welcome contributions to **Pokedex**! Whether you're fixing bugs, adding new 
    cd pokedex
    ```
 
+   This creates a local repo to your own github account where you can make your changes
+
 3. **Create a Branch:**
 
    Create a new branch for your changes:
@@ -73,6 +75,7 @@ We welcome contributions to **Pokedex**! Whether you're fixing bugs, adding new 
   Update relevant documentation to reflect your changes. This includes README files, project descriptions, and any new features or modifications.
 
 - **Commit Messages:**
+
 
   Write clear and concise commit messages. Use the imperative mood in the subject line (e.g., "Fix issue" instead of "Fixed issue").
 
