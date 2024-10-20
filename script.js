@@ -92,6 +92,19 @@ window.addEventListener("scroll", () => {
   }
 });
 
-backToTopButton.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+
+
+// Show or hide the button based on scroll position
+window.onscroll = function() {
+    const backToTopButton = document.getElementById('back-to-top');
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+};
+
+// Scroll back to the top when the button is clicked
+document.getElementById('back-to-top').addEventListener('click', function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
 });
