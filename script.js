@@ -81,17 +81,35 @@ inputBox.addEventListener('keydown', function (event) {
     }
 });
 
+// Dark Mode Toggle Logic
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+// Check Local Storage for Saved Theme Preference
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+}
+
+// Toggle Dark Mode on Button Click
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    // Save Theme Preference to Local Storage
+    const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
+});
+
 //functionality for the back-to-top button
 const backToTopButton = document.getElementById("back-to-top");
 
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 100) {
-    backToTopButton.style.display = "flex";
-  } else {
-    backToTopButton.style.display = "none";
-  }
+    if (window.pageYOffset > 100) {
+        backToTopButton.style.display = "flex";
+    } else {
+        backToTopButton.style.display = "none";
+    }
 });
 
 backToTopButton.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
