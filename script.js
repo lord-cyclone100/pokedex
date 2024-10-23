@@ -68,7 +68,7 @@ const fetchData = async()=>{
     } 
     catch(error){
         console.log(error);
-        
+        window.location.href = "errorpageindex.html";
     }
     
     inputBox.value = ""
